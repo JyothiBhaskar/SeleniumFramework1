@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Log Info: Setting upthe Browser]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO- Browser And Application Is Up And Running]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO- Running After Class- Closing Browser]]>
+    </line>
+    <line>
+      <![CDATA[Log Info: Closing the Browse]]>
+    </line>
+    <line>
+      <![CDATA[LOG:INFO- Browser Closed]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2023-11-29T12:30:16 IST" name="Default suite" finished-at="2023-11-29T12:30:23 IST" duration-ms="7495">
+    <groups>
+    </groups>
+    <test started-at="2023-11-29T12:30:16 IST" name="Default test" finished-at="2023-11-29T12:30:23 IST" duration-ms="7495">
+      <class name="testcases.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@3e27ba32]" started-at="2023-11-29T12:30:16 IST" name="setup" finished-at="2023-11-29T12:30:22 IST" duration-ms="5579" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Log Info: Setting upthe Browser]]>
+            </line>
+            <line>
+              <![CDATA[LOG:INFO- Browser And Application Is Up And Running]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="ValidLogin(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@3e27ba32]" started-at="2023-11-29T12:30:22 IST" name="ValidLogin" data-provider="TestingData" finished-at="2023-11-29T12:30:23 IST" duration-ms="733" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin@email.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidLogin -->
+        <test-method is-config="true" signature="tearup()[pri:0, instance:testcases.LoginTest@3e27ba32]" started-at="2023-11-29T12:30:23 IST" name="tearup" finished-at="2023-11-29T12:30:23 IST" duration-ms="243" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[LOG:INFO- Running After Class- Closing Browser]]>
+            </line>
+            <line>
+              <![CDATA[Log Info: Closing the Browse]]>
+            </line>
+            <line>
+              <![CDATA[LOG:INFO- Browser Closed]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearup -->
+      </class> <!-- testcases.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

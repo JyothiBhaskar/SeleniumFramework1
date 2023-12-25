@@ -1,0 +1,5 @@
+appURL=https://freelance-learn-automation.vercel.app
+browser=Chrome
+implicitWait=20
+pageLoadTimeout=60
+scriptTimeout=10
