@@ -17,12 +17,12 @@
       <![CDATA[LOG:INFO- Browser Closed]]>
     </line>
   </reporter-output>
-  <suite started-at="2023-11-29T12:30:16 IST" name="Default suite" finished-at="2023-11-29T12:30:23 IST" duration-ms="7495">
+  <suite started-at="2024-01-09T17:22:07 IST" name="Suite" finished-at="2024-01-09T17:22:14 IST" duration-ms="7230">
     <groups>
     </groups>
-    <test started-at="2023-11-29T12:30:16 IST" name="Default test" finished-at="2023-11-29T12:30:23 IST" duration-ms="7495">
+    <test started-at="2024-01-09T17:22:07 IST" name="LoginTest" finished-at="2024-01-09T17:22:14 IST" duration-ms="7230">
       <class name="testcases.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@3e27ba32]" started-at="2023-11-29T12:30:16 IST" name="setup" finished-at="2023-11-29T12:30:22 IST" duration-ms="5579" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@3e27ba32]" started-at="2024-01-09T17:22:07 IST" name="setup" finished-at="2024-01-09T17:22:11 IST" duration-ms="4491" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Log Info: Setting upthe Browser]]>
@@ -32,7 +32,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="ValidLogin(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@3e27ba32]" started-at="2023-11-29T12:30:22 IST" name="ValidLogin" data-provider="TestingData" finished-at="2023-11-29T12:30:23 IST" duration-ms="733" status="PASS">
+        <test-method signature="ValidLogin(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@3e27ba32]" started-at="2024-01-09T17:22:13 IST" name="ValidLogin" data-provider="TestingData" finished-at="2024-01-09T17:22:14 IST" duration-ms="986" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -48,7 +48,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidLogin -->
-        <test-method is-config="true" signature="tearup()[pri:0, instance:testcases.LoginTest@3e27ba32]" started-at="2023-11-29T12:30:23 IST" name="tearup" finished-at="2023-11-29T12:30:23 IST" duration-ms="243" status="PASS">
+        <test-method is-config="true" signature="tearup()[pri:0, instance:testcases.LoginTest@3e27ba32]" started-at="2024-01-09T17:22:14 IST" name="tearup" finished-at="2024-01-09T17:22:14 IST" duration-ms="258" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[LOG:INFO- Running After Class- Closing Browser]]>
@@ -62,6 +62,6 @@
           </reporter-output>
         </test-method> <!-- tearup -->
       </class> <!-- testcases.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- LoginTest -->
+  </suite> <!-- Suite -->
 </testng-results>
