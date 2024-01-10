@@ -10,12 +10,12 @@
   		<artifactId>selenium-java</artifactId>
   		<version>4.11.0</version>
   	</dependency>
-  	
+  	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium.grid/selenium-grid-webserver -->
   	<dependency>
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.7.1</version>
-    <scope>test</scope>
+    <scope>compile</scope>
 </dependency>
 
 <dependency>

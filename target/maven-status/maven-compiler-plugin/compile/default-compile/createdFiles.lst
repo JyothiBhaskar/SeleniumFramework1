@@ -1,0 +1,7 @@
+com\Automation\DataProvider\GetDataCode.class
+com\Automation\Base\BaseClass.class
+com\Automation\Uitlity\Helper.class
+com\Automation\BrowseFactory\BrowserFactory.class
+com\Automation\pages\LoginPage.class
+com\Automation\DataProvider\ExcelClass.class
+com\Automation\DataProvider\ConfigReader.class
