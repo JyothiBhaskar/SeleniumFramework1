@@ -48,7 +48,7 @@ public class BrowserFactory {
 				//}
 				
 				try {
-					driver=new RemoteWebDriver(new URL("http://13.200.253.50:4444/"),options);
+					driver=new RemoteWebDriver(new URL("http://13.232.61.89:4444/"),options);
 				} catch (MalformedURLException e) {
 					Reporter.log("Log:Info - Couldn't connect to seleniumGrid"+e.getMessage());
 				}
