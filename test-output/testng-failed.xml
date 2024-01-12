@@ -6,7 +6,7 @@
       <class name="testcases.LoginTest">
         <methods>
           <include name="tearup"/>
-          <include name="ValidLogin"/>
+          <include name="ValidLogin" invocation-numbers="0"/>
           <include name="setup"/>
         </methods>
       </class> <!-- testcases.LoginTest -->

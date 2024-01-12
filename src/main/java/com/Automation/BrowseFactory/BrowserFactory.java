@@ -39,14 +39,14 @@ public class BrowserFactory {
 				capabilities.setCapability("browserVersion", "120.0");
 				capabilities.setCapability("platformName", "linux");
 				
-				//if (ConfigReader.getProperty("headless").equalsIgnoreCase("true")) 
-				//{
-					//options.addArguments("--headless=new");
+				if (ConfigReader.getProperty("headless").equalsIgnoreCase("true")) 
+				{
+					options.addArguments("--headless=new");
 					
-					//Reporter.log("LOG:INFO - Running Test In Headless Mode",true);
+					Reporter.log("LOG:INFO - Running Test In Headless Mode",true);
 
-				//}
-				
+				}
+				options.merge(capabilities);
 				try {
 					driver=new RemoteWebDriver(new URL("http://13.232.61.89:4444"),options);
 				} catch (MalformedURLException e) {
