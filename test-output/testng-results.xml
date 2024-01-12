@@ -5,12 +5,12 @@
       <![CDATA[Log Info: Setting upthe Browser]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-01-10T23:59:30 IST" name="Default suite" finished-at="2024-01-10T23:59:36 IST" duration-ms="5525">
+  <suite started-at="2024-01-11T22:26:36 IST" name="Suite" finished-at="2024-01-11T22:29:39 IST" duration-ms="183124">
     <groups>
     </groups>
-    <test started-at="2024-01-10T23:59:30 IST" name="Default test" finished-at="2024-01-10T23:59:36 IST" duration-ms="5525">
+    <test started-at="2024-01-11T22:26:36 IST" name="LoginTest" finished-at="2024-01-11T22:29:39 IST" duration-ms="183124">
       <class name="testcases.LoginTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@33bc72d1]" started-at="2024-01-10T23:59:30 IST" name="setup" finished-at="2024-01-10T23:59:34 IST" duration-ms="4351" status="FAIL">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testcases.LoginTest@3e27ba32]" started-at="2024-01-11T22:26:36 IST" name="setup" finished-at="2024-01-11T22:29:38 IST" duration-ms="182033" status="FAIL">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Possible causes are invalid address of the remote server or browser start-up failure. 
@@ -61,8 +61,8 @@ at org.testng.TestNG.run(TestNG.java:1082)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: no further information: /13.232.61.89:4444
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
+Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:76)
 at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
 at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
 at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:48)
@@ -75,41 +75,20 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
 ... 31 more
-Caused by: java.net.ConnectException: Connection refused: no further information: /13.232.61.89:4444
-at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
-at org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)
-at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)
-at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:20)
-at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
-at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)
-at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)
-at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
-at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
-at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629)
-at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:118)
-at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
-at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
-at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
-at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /13.232.61.89:4444
-Caused by: java.net.ConnectException: Connection refused: no further information
-at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
-at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
-at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
-at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
-at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to 13.232.61.89/13.232.61.89:4444 after 180000 ms
+at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+... 42 more
+Caused by: java.util.concurrent.TimeoutException: Request timeout to 13.232.61.89/13.232.61.89:4444 after 180000 ms
+at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
+at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
+at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
 at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
@@ -121,7 +100,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="ValidLogin(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@33bc72d1]" started-at="2024-01-10T23:59:35 IST" name="ValidLogin" data-provider="TestingData" finished-at="2024-01-10T23:59:35 IST" duration-ms="1" status="SKIP">
+        <test-method signature="ValidLogin(java.lang.String,java.lang.String)[pri:0, instance:testcases.LoginTest@3e27ba32]" started-at="2024-01-11T22:29:39 IST" name="ValidLogin" data-provider="TestingData" finished-at="2024-01-11T22:29:39 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -184,8 +163,8 @@ at org.testng.TestNG.run(TestNG.java:1082)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: java.io.UncheckedIOException: java.net.ConnectException: Connection refused: no further information: /13.232.61.89:4444
-at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:73)
+Caused by: java.lang.RuntimeException: NettyHttpHandler request execution error
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:76)
 at org.openqa.selenium.remote.http.AddSeleniumUserAgent.lambda$apply$0(AddSeleniumUserAgent.java:42)
 at org.openqa.selenium.remote.http.Filter.lambda$andFinally$1(Filter.java:55)
 at org.openqa.selenium.remote.http.netty.NettyHttpHandler.execute(NettyHttpHandler.java:48)
@@ -198,41 +177,20 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
 ... 31 more
-Caused by: java.net.ConnectException: Connection refused: no further information: /13.232.61.89:4444
-at org.asynchttpclient.netty.channel.NettyConnectListener.onFailure(NettyConnectListener.java:179)
-at org.asynchttpclient.netty.channel.NettyChannelConnector$1.onFailure(NettyChannelConnector.java:108)
-at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:28)
-at org.asynchttpclient.netty.SimpleChannelFutureListener.operationComplete(SimpleChannelFutureListener.java:20)
-at io.netty.util.concurrent.DefaultPromise.notifyListener0(DefaultPromise.java:590)
-at io.netty.util.concurrent.DefaultPromise.notifyListeners0(DefaultPromise.java:583)
-at io.netty.util.concurrent.DefaultPromise.notifyListenersNow(DefaultPromise.java:559)
-at io.netty.util.concurrent.DefaultPromise.notifyListeners(DefaultPromise.java:492)
-at io.netty.util.concurrent.DefaultPromise.setValue0(DefaultPromise.java:636)
-at io.netty.util.concurrent.DefaultPromise.setFailure0(DefaultPromise.java:629)
-at io.netty.util.concurrent.DefaultPromise.tryFailure(DefaultPromise.java:118)
-at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.fulfillConnectPromise(AbstractNioChannel.java:321)
-at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:337)
-at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
-at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
-at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
-at java.base/java.lang.Thread.run(Thread.java:833)
-Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: no further information: /13.232.61.89:4444
-Caused by: java.net.ConnectException: Connection refused: no further information
-at java.base/sun.nio.ch.Net.pollConnect(Native Method)
-at java.base/sun.nio.ch.Net.pollConnectNow(Net.java:672)
-at java.base/sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:946)
-at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:337)
-at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:334)
-at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:776)
-at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
-at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
-at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
-at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
-at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+Caused by: java.util.concurrent.ExecutionException: java.util.concurrent.TimeoutException: Request timeout to 13.232.61.89/13.232.61.89:4444 after 180000 ms
+at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+at org.asynchttpclient.netty.NettyResponseFuture.get(NettyResponseFuture.java:206)
+at org.openqa.selenium.remote.http.netty.NettyHttpHandler.makeCall(NettyHttpHandler.java:59)
+... 42 more
+Caused by: java.util.concurrent.TimeoutException: Request timeout to 13.232.61.89/13.232.61.89:4444 after 180000 ms
+at org.asynchttpclient.netty.timeout.TimeoutTimerTask.expire(TimeoutTimerTask.java:43)
+at org.asynchttpclient.netty.timeout.RequestTimeoutTimerTask.run(RequestTimeoutTimerTask.java:50)
+at io.netty.util.HashedWheelTimer$HashedWheelTimeout.run(HashedWheelTimer.java:715)
+at io.netty.util.concurrent.ImmediateExecutor.execute(ImmediateExecutor.java:34)
+at io.netty.util.HashedWheelTimer$HashedWheelTimeout.expire(HashedWheelTimer.java:703)
+at io.netty.util.HashedWheelTimer$HashedWheelBucket.expireTimeouts(HashedWheelTimer.java:790)
+at io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:503)
 at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 at java.base/java.lang.Thread.run(Thread.java:833)
 ]]>
@@ -241,11 +199,11 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ValidLogin -->
-        <test-method is-config="true" signature="tearup()[pri:0, instance:testcases.LoginTest@33bc72d1]" started-at="2024-01-10T23:59:35 IST" name="tearup" finished-at="2024-01-10T23:59:35 IST" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="tearup()[pri:0, instance:testcases.LoginTest@3e27ba32]" started-at="2024-01-11T22:29:39 IST" name="tearup" finished-at="2024-01-11T22:29:39 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearup -->
       </class> <!-- testcases.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- LoginTest -->
+  </suite> <!-- Suite -->
 </testng-results>
